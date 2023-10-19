@@ -18,11 +18,11 @@ public class StackTest {
         assertEquals(true, stack.isEmpty());
     }
 
-    // @Test
-    // public void stackShouldHaveOneElementAfterPush() {
-    //     Stack stack = new Stack();
-    //     stack.push("foo");
-    //     assertEquals(false, stack.isEmpty());
-    // }
+    @Test
+    public void stackShouldHaveOneElementAfterPush() {
+        Stack stack = new Stack();
+        stack.push("foo");
+        assertEquals(false, stack.isEmpty());
+    }
 
 }
