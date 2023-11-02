@@ -2,7 +2,7 @@ package org.suupaamaaketto.stack;
 
 public class Stack {
 
-    Boolean isEmpty=true;
+    private Boolean isEmpty=true;
     public Boolean isEmpty() {
         return isEmpty;
     }
@@ -11,8 +11,13 @@ public class Stack {
         isEmpty=false;
     }
 
-    public int pop()throws UnderFlowException
+    public String pop()throws UnderFlowException
     {
-        throw new UnderFlowException();       
+        if(isEmpty()){
+            throw new UnderFlowException();
+        }
+
+        isEmpty = true;
+        return "1";
     }
 }
