@@ -19,6 +19,6 @@ public class Stack {
         }
 
         numItems -= 1;
-        return "1";
+        return "item1";
     }
 }

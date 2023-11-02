@@ -46,4 +46,12 @@ public class StackTest {
         assertFalse(stack.isEmpty(), "stack should NOT be empty");
     }
 
+    @Test
+    public void afterPushingAnItemAndPopItShouldReturnTheSameItem() throws UnderFlowException{
+        String item1="item1";
+        stack.push(item1);
+        String returendValue=stack.pop();
+        assertEquals(item1,returendValue,"The rturn item should be the same as pushed item");
+    }
+
 }
