@@ -10,4 +10,9 @@ public class Stack {
     public void push(String input){
         isEmpty=false;
     }
+
+    public int pop()throws UnderFlowException
+    {
+        throw new UnderFlowException();       
+    }
 }
