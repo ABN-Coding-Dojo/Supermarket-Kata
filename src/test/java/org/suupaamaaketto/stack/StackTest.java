@@ -38,4 +38,12 @@ public class StackTest {
         assertTrue(stack.isEmpty(), "Stack should be empty");
     }
 
+    @Test
+    public void afterTwoPushAndOnePopStackShouldNotBeEmpty() throws UnderFlowException {
+        stack.push("foo");
+        stack.push("bar");
+        stack.pop();
+        assertFalse(stack.isEmpty(), "stack should NOT be empty");
+    }
+
 }
