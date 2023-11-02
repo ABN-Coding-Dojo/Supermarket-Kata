@@ -16,23 +16,17 @@ public class StackTest {
 
     @Test
     public void stackShouldBeEmpty() {
-//        Stack stack = new Stack();
         assertEquals(true, stack.isEmpty());
     }
 
     @Test
     public void stackShouldHaveOneElementAfterPush() {
-//        Stack stack = new Stack();
         stack.push("foo");
         assertEquals(false, stack.isEmpty());
     }
 
     @Test
     public void poppingAnEmptyStackShouldThrowAnUnderflowException(){
-        //Arrange
-//        Stack stack=new Stack();
-        //Act
-        //Assert
         assertThrows(UnderFlowException.class,()->stack.pop());
     }
 
