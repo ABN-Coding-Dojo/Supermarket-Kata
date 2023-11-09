@@ -49,6 +49,7 @@ response:
     ]
 } 
 ```
+- when the database is empty the result list is also empty
 
 ### User story 2: 
 
