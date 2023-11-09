@@ -4,6 +4,6 @@ import java.util.List;
 
 public class CatalogueService {
     public List<Object> getCatalogue() {
-        return List.of();
+        return List.of(new Object());
     }
 }

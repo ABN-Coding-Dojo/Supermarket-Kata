@@ -50,6 +50,7 @@ response:
 } 
 ```
 - when the database is empty the result list is also empty
+- when the database has products then result list should not be empty
 
 ### User story 2: 
 

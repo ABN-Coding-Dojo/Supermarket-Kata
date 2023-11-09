@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 class CatalogueServiceTest {
     @Test
@@ -14,5 +14,14 @@ class CatalogueServiceTest {
         List<Object> result = catalogueService.getCatalogue();
 
         assertTrue(result.isEmpty(), "the resulting list should be empty");
+    }
+
+    @Test
+    void getCatalogueWhenDatabaseHasProductsShouldReturnNonEmptyList() {
+        var catalogueService = new CatalogueService();
+
+        List<Object> result = catalogueService.getCatalogue();
+
+        assertFalse(result.isEmpty(), "the resulting list shouldn't be empty");
     }
 }
